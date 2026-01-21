@@ -84,19 +84,19 @@ python main.py --mode evaluate
 ## 🔧 Technologies Stack
 
 # Machine Learning
-    Scikit-learn : Modèles classiques et pipeline
-    XGBoost : Gradient boosting optimisé
-    TensorFlow/Keras : Réseaux de neurones
+Scikit-learn : Modèles classiques et pipeline
+XGBoost : Gradient boosting optimisé
+TensorFlow/Keras : Réseaux de neurones
 
 # Data Processing
-    Pandas : Manipulation des données
-    NumPy : Calculs numériques
-    SciPy : Statistiques avancées
+Pandas : Manipulation des données
+NumPy : Calculs numériques
+SciPy : Statistiques avancées
 
 # Visualization
-    Matplotlib : Graphiques statiques
-    Seaborn : Visualisations statistiques
-    Plotly : Graphiques interactifs
+Matplotlib : Graphiques statiques
+Seaborn : Visualisations statistiques
+Plotly : Graphiques interactifs
 
 ## 📊 Features Importantes
 Les 5 features les plus prédictives identifiées :
@@ -127,10 +127,10 @@ python tests/test_preprocessing.py
 python tests/test_models.py
 ```
 ## 📝 Dataset
-# Sources
-    FootyStats API : Données historiques
-    FBref : Statistiques avancées
-    Understat : Métriques xG/xA
+Sources
+FootyStats API : Données historiques
+FBref : Statistiques avancées
+Understat : Métriques xG/xA
 
 # Championnats couverts
 - Premier League (Angleterre)

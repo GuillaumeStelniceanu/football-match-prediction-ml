@@ -2,7 +2,6 @@
 Tests unitaires pour les modèles de Machine Learning
 """
 
-import pytest
 import pandas as pd
 import numpy as np
 import sys
@@ -73,7 +72,6 @@ def test_confusion_matrix():
     y_pred = np.array([1, 0, 0, 1, -1, -1])
     
     # Calculer la matrice de confusion manuellement
-    # Pour 3 classes: -1, 0, 1
     classes = [-1, 0, 1]
     cm = np.zeros((3, 3), dtype=int)
     
@@ -82,23 +80,19 @@ def test_confusion_matrix():
         j = classes.index(pred)
         cm[i, j] += 1
     
-    # Vérifier les valeurs
-    # Indices: [0,0] = -1 prédit comme -1
-    #          [0,1] = -1 prédit comme 0
-    #          [0,2] = -1 prédit comme 1
-    #          [1,0] = 0 prédit comme -1
-    #          [1,1] = 0 prédit comme 0
-    #          [1,2] = 0 prédit comme 1
-    #          [2,0] = 1 prédit comme -1
-    #          [2,1] = 1 prédit comme 0
-    #          [2,2] = 1 prédit comme 1
-    
-    assert cm[0, 0] == 1  # -1 prédit comme -1 ✓
-    assert cm[0, 1] == 1  # -1 prédit comme 0 ✓
-    assert cm[1, 1] == 1  # 0 prédit comme 0 ✓
-    # CORRECTION : 0 prédit comme -1 se trouve à la position [1, 0]
-    assert cm[1, 0] == 1  # 0 prédit comme -1 ✓
-    assert cm[2, 2] == 2  # 1 prédit comme 1 ✓
+    # Vérifier avec sklearn (si disponible)
+    try:
+        from sklearn.metrics import confusion_matrix
+        sk_cm = confusion_matrix(y_true, y_pred, labels=classes)
+        # Vérifier que notre calcul correspond à sklearn
+        assert np.array_equal(cm, sk_cm)
+    except ImportError:
+        # Si sklearn n'est pas disponible, vérifier manuellement
+        assert cm[0, 0] == 1  # -1 prédit comme -1
+        assert cm[0, 1] == 1  # -1 prédit comme 0
+        assert cm[1, 1] == 1  # 0 prédit comme 0
+        assert cm[1, 0] == 1  # 0 prédit comme -1
+        assert cm[2, 2] == 2  # 1 prédit comme 1
     
     print("✅ Test de la matrice de confusion réussi")
 
