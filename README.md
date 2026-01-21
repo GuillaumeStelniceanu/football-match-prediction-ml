@@ -17,26 +17,26 @@ Système intelligent de prédiction des résultats de matchs de football utilisa
 
 ## 🏗️ Architecture
  football-match-prediction-ml/
-├── 📁 data/ # Données brutes et transformées
-│ ├── raw/ # Données originales
-│ └── processed/ # Données prétraitées
-├── 📁 notebooks/ # Notebooks d'analyse
-│ ├── 01_eda.ipynb # Exploration des données
-│ ├── 02_feature_engineering.ipynb
-│ └── 03_model_training.ipynb
-├── 📁 src/ # Code source Python
-│ ├── preprocessing.py # Pipeline de prétraitement
-│ ├── models.py # Implémentation des modèles
-│ ├── utils.py # Fonctions utilitaires
-│ └── visualization.py # Génération de graphiques
-├── 📁 models/ # Modèles entraînés (sauvegardés)
-├── 📁 tests/ # Tests unitaires
-│ ├── test_preprocessing.py
-│ └── test_models.py
-├── 📁 visuals/ # Graphiques exportés
-├── 📄 main.py # Script principal
-├── 📄 requirements.txt # Dépendances
-└── 📄 README.md # Ce fichier
+ ├── 📁 data/ # Données brutes et transformées
+ │ ├── raw/ # Données originales
+ │ └── processed/ # Données prétraitées
+ ├── 📁 notebooks/ # Notebooks d'analyse
+ │ ├── 01_eda.ipynb # Exploration des données
+ │ ├── 02_feature_engineering.ipynb
+ │ └── 03_model_training.ipynb
+ ├── 📁 src/ # Code source Python
+ │ ├── preprocessing.py # Pipeline de prétraitement
+ │ ├── models.py # Implémentation des modèles
+ │ ├── utils.py # Fonctions utilitaires
+ │ └── visualization.py # Génération de graphiques
+ ├── 📁 models/ # Modèles entraînés (sauvegardés)
+ ├── 📁 tests/ # Tests unitaires
+ │ ├── test_preprocessing.py
+ │ └── test_models.py
+ ├── 📁 visuals/ # Graphiques exportés
+ ├── 📄 main.py # Script principal
+ ├── 📄 requirements.txt # Dépendances
+ └── 📄 README.md # Ce fichier
 
 
 ## 🚀 Quick Start
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 ```bash
 python main.py --mode full
 ```
-##💻 Usage
+## 💻 Usage
 Modes d'exécution
 ```bash
 # Prétraitement uniquement
@@ -81,23 +81,24 @@ python main.py --mode visualize
 # Évaluation des modèles
 python main.py --mode evaluate
 ```
-##🔧 Technologies Stack
-#Machine Learning
-- Scikit-learn : Modèles classiques et pipeline
-- XGBoost : Gradient boosting optimisé
-- TensorFlow/Keras : Réseaux de neurones
+## 🔧 Technologies Stack
 
-#Data Processing
-- Pandas : Manipulation des données
-- NumPy : Calculs numériques
-- SciPy : Statistiques avancées
+# Machine Learning
+    Scikit-learn : Modèles classiques et pipeline
+    XGBoost : Gradient boosting optimisé
+    TensorFlow/Keras : Réseaux de neurones
 
-#Visualization
-- Matplotlib : Graphiques statiques
-- Seaborn : Visualisations statistiques
-- Plotly : Graphiques interactifs
+# Data Processing
+    Pandas : Manipulation des données
+    NumPy : Calculs numériques
+    SciPy : Statistiques avancées
 
-##📊 Features Importantes
+# Visualization
+    Matplotlib : Graphiques statiques
+    Seaborn : Visualisations statistiques
+    Plotly : Graphiques interactifs
+
+## 📊 Features Importantes
 Les 5 features les plus prédictives identifiées :
 
 GoalDiff (28%) - Différence de buts moyenne
@@ -106,7 +107,7 @@ HomeForm (18%) - Forme de l'équipe à domicile
 AwayForm (15%) - Forme de l'équipe à l'extérieur
 CornerDiff (12%) - Différence de corners
 
-##📈 Résultats
+## 📈 Résultats
 Performance des modèles
 https://visuals/confusion_matrix.png
 
@@ -116,7 +117,7 @@ https://visuals/feature_importance.png
 Prédictions vs Réalité
 https://visuals/predictions_vs_reality.png
 
-##🧪 Tests
+## 🧪 Tests
 ``` bash
 # Exécuter tous les tests
 python -m pytest tests/
@@ -125,20 +126,20 @@ python -m pytest tests/
 python tests/test_preprocessing.py
 python tests/test_models.py
 ```
-##📝 Dataset
-#Sources
-- FootyStats API : Données historiques
-- FBref : Statistiques avancées
-- Understat : Métriques xG/xA
+## 📝 Dataset
+# Sources
+    FootyStats API : Données historiques
+    FBref : Statistiques avancées
+    Understat : Métriques xG/xA
 
-#Championnats couverts
+# Championnats couverts
 - Premier League (Angleterre)
 - La Liga (Espagne)
 - Serie A (Italie)
 - Bundesliga (Allemagne)
 - Ligue 1 (France)
 
-##🔮 Roadmap
+## 🔮 Roadmap
 
 - Pipeline de prétraitement
 - Implémentation modèles ML

@@ -31,13 +31,6 @@ pyvenv.cfg
 
 
 
-# Visualisations
-visuals/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.pdf
 
 # Éditeurs et IDE
 .vscode/
