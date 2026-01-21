@@ -84,28 +84,28 @@ python main.py --mode evaluate
 ## 🔧 Technologies Stack
 
 # Machine Learning
-Scikit-learn : Modèles classiques et pipeline
-XGBoost : Gradient boosting optimisé
-TensorFlow/Keras : Réseaux de neurones
+Scikit-learn : Modèles classiques et pipeline  
+XGBoost : Gradient boosting optimisé  
+TensorFlow/Keras : Réseaux de neurones  
 
 # Data Processing
-Pandas : Manipulation des données
-NumPy : Calculs numériques
-SciPy : Statistiques avancées
+Pandas : Manipulation des données  
+NumPy : Calculs numériques  
+SciPy : Statistiques avancées  
 
 # Visualization
-Matplotlib : Graphiques statiques
-Seaborn : Visualisations statistiques
-Plotly : Graphiques interactifs
+Matplotlib : Graphiques statiques  
+Seaborn : Visualisations statistiques  
+Plotly : Graphiques interactifs  
 
 ## 📊 Features Importantes
-Les 5 features les plus prédictives identifiées :
-
-GoalDiff (28%) - Différence de buts moyenne
-ShotDiff (22%) - Différence de tirs
-HomeForm (18%) - Forme de l'équipe à domicile
-AwayForm (15%) - Forme de l'équipe à l'extérieur
-CornerDiff (12%) - Différence de corners
+Les 5 features les plus prédictives identifiées :  
+  
+GoalDiff (28%) - Différence de buts moyenne  
+ShotDiff (22%) - Différence de tirs  
+HomeForm (18%) - Forme de l'équipe à domicile  
+AwayForm (15%) - Forme de l'équipe à l'extérieur  
+CornerDiff (12%) - Différence de corners  
 
 ## 📈 Résultats
 Performance des modèles
