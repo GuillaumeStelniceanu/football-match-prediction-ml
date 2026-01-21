@@ -1,0 +1,22 @@
+{
+  "date": "2026-01-20 21:31:18",
+  "best_model": "Logistic Regression",
+  "best_accuracy": 1.0,
+  "baseline_accuracy": 0.45776566757493187,
+  "improvement": 0.5422343324250681,
+  "n_features": 10,
+  "n_train": 1464,
+  "n_test": 367,
+  "features_used": [
+    "HomeGoals",
+    "AwayGoals",
+    "HT_HomeGoals",
+    "HT_AwayGoals",
+    "HomeShots",
+    "AwayShots",
+    "HomeShotsTarget",
+    "AwayShotsTarget",
+    "HomeFouls",
+    "AwayFouls"
+  ]
+}

@@ -1,0 +1,15 @@
+HomeGoals
+AwayGoals
+HT_HomeGoals
+HT_AwayGoals
+HomeShotsTarget
+AwayShotsTarget
+GoalDiff
+TotalGoals
+ShotDiff
+ShotOnTargetDiff
+FormDiff
+GoalDiff_scaled
+ShotDiff_scaled
+ShotOnTargetDiff_scaled
+FormDiff_scaled

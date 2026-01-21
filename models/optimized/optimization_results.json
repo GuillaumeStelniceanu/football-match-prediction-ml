@@ -1,0 +1,11 @@
+{
+  "random_forest": {
+    "best_params": {
+      "max_depth": 10,
+      "min_samples_split": 2,
+      "n_estimators": 100
+    },
+    "best_score": 0.9800241218151666,
+    "test_accuracy": 0.9787001638448936
+  }
+}

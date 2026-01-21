@@ -1,0 +1,10 @@
+HomeGoals
+AwayGoals
+HT_HomeGoals
+HT_AwayGoals
+HomeShots
+AwayShots
+HomeShotsTarget
+AwayShotsTarget
+HomeFouls
+AwayFouls
