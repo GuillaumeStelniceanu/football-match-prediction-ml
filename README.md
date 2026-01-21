@@ -107,17 +107,6 @@ HomeForm (18%) - Forme de l'équipe à domicile
 AwayForm (15%) - Forme de l'équipe à l'extérieur  
 CornerDiff (12%) - Différence de corners  
 
-## 📈 Résultats
-Performance des modèles  
-![Matrice de Confusion](visuals/confusion_matrix.png)
-
-Importance des features  
-![Importance des Features](visuals/feature_importance.png)
-
-Prédictions vs Réalité  
-![Prédictions vs Réalité](visuals/predictions_vs_reality.png)
-
-
 
 ## 🧪 Tests
 ``` bash
