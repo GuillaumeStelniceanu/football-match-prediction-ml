@@ -16,27 +16,27 @@ Système intelligent de prédiction des résultats de matchs de football utilisa
 - **📊 Visualisations** : Graphiques interactifs et insights
 
 ## 🏗️ Architecture
- football-match-prediction-ml/
- ├── 📁 data/ # Données brutes et transformées
- │ ├── raw/ # Données originales
- │ └── processed/ # Données prétraitées
- ├── 📁 notebooks/ # Notebooks d'analyse
- │ ├── 01_eda.ipynb # Exploration des données
- │ ├── 02_feature_engineering.ipynb
- │ └── 03_model_training.ipynb
- ├── 📁 src/ # Code source Python
- │ ├── preprocessing.py # Pipeline de prétraitement
- │ ├── models.py # Implémentation des modèles
- │ ├── utils.py # Fonctions utilitaires
- │ └── visualization.py # Génération de graphiques
- ├── 📁 models/ # Modèles entraînés (sauvegardés)
- ├── 📁 tests/ # Tests unitaires
- │ ├── test_preprocessing.py
- │ └── test_models.py
- ├── 📁 visuals/ # Graphiques exportés
- ├── 📄 main.py # Script principal
- ├── 📄 requirements.txt # Dépendances
- └── 📄 README.md # Ce fichier
+ football-match-prediction-ml/  
+ ├── 📁 data/ # Données brutes et transformées  
+ │ ├── raw/ # Données originales  
+ │ └── processed/ # Données prétraitées  
+ ├── 📁 notebooks/ # Notebooks d'analyse  
+ │ ├── 01_eda.ipynb # Exploration des données  
+ │ ├── 02_feature_engineering.ipynb  
+ │ └── 03_model_training.ipynb  
+ ├── 📁 src/ # Code source Python  
+ │ ├── preprocessing.py # Pipeline de prétraitement  
+ │ ├── models.py # Implémentation des modèles  
+ │ ├── utils.py # Fonctions utilitaires  
+ │ └── visualization.py # Génération de graphiques  
+ ├── 📁 models/ # Modèles entraînés (sauvegardés)  
+ ├── 📁 tests/ # Tests unitaires  
+ │ ├── test_preprocessing.py  
+ │ └── test_models.py  
+ ├── 📁 visuals/ # Graphiques exportés  
+ ├── 📄 main.py # Script principal  
+ ├── 📄 requirements.txt # Dépendances  
+ └── 📄 README.md # Ce fichier  
 
 
 ## 🚀 Quick Start
@@ -108,14 +108,16 @@ AwayForm (15%) - Forme de l'équipe à l'extérieur
 CornerDiff (12%) - Différence de corners  
 
 ## 📈 Résultats
-Performance des modèles
-https://visuals/confusion_matrix.png
+Performance des modèles  
+![Matrice de Confusion](visuals/confusion_matrix.png)
 
-Importance des features
-https://visuals/feature_importance.png
+Importance des features  
+![Importance des Features](visuals/feature_importance.png)
 
-Prédictions vs Réalité
-https://visuals/predictions_vs_reality.png
+Prédictions vs Réalité  
+![Prédictions vs Réalité](visuals/predictions_vs_reality.png)
+
+
 
 ## 🧪 Tests
 ``` bash
@@ -127,10 +129,10 @@ python tests/test_preprocessing.py
 python tests/test_models.py
 ```
 ## 📝 Dataset
-Sources
-FootyStats API : Données historiques
-FBref : Statistiques avancées
-Understat : Métriques xG/xA
+Sources  
+FootyStats API : Données historiques  
+FBref : Statistiques avancées  
+Understat : Métriques xG/xA  
 
 # Championnats couverts
 - Premier League (Angleterre)
